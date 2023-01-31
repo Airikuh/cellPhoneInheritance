@@ -28,3 +28,44 @@ public:
 
 
 };
+
+
+
+//Iphone Class
+class Iphone: public Phone {
+	//Iphone Attributes
+	int AppleId;
+
+//Public Methods
+public:
+
+	//Default Constructor With Inline Definition
+	Iphone() { AppleId = 0; }
+
+	//Set Methods
+	void setAppleId(int x);
+
+	//Get Methods
+	int getAppleId();
+	   
+};
+
+
+//Iphone8 Class
+class Iphone8 : public Iphone {
+	//Iphone8 Attributes
+	bool augmentedRealityStatus;
+
+//Public Methods
+public:
+
+	//Default Constructor With Inline Definition
+	Iphone8() { augmentedRealityStatus = false; }
+
+	//Set Methods
+	void setAugmentedRealityStatus(bool x);
+
+	//Get Methods
+	bool getAugmentedRealityStatus();
+};
+
